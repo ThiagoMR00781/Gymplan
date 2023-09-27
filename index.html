@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Gymplan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="widht, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="botton.js" defer></script>
+    <title></title>
+</head>
+
+<body>
+    <section>
+        <header>
+            <img src="img/banner.png" alt="banner logomarca">
+        </header>
+
+        <nav>
+            <div class="menu"><a href="#pag-sobre">SOBRE</a></div>
+            <div class="menu"><a href="#pag-planos">PLANOS</a></div>
+            <div class="menu"><a href="#pag-academias" onclick="abrir()">ACADEMIAS</a></div>
+            <div class="menu"><a href="#pag-contato">CONTATO</a></div>
+        </nav>
+
+        <main id="pag-sobre">
+            <div>
+                <h1>SOBRE NÓS</h1>
+
+                <p>A nossa preocupação é influênciar pessoas a cuidarem mais da saúde pensando sempre no bem-estar dos
+                    nossos clientes, a partir dessa ideia oferecemos opções de planos com mensalidades únicas e com
+                    diversos
+                    benefícios.
+                    E você pode ter tudo isso na palma da sua mão. Escolha seu plan para cuidar da sua saúde!
+                </p>
+            </div>
+
+            <div id="pag-planos">
+
+                <h2>Escolha seu Plan!</h2>
+
+                <div id="container"> 
+                    
+                    <div class="card">
+                        <h3>Silver</h3>
+                        <ul>
+                            <li>EnerGym</li>
+                            <li>Padium</li>
+                            <li>Dynamic</li>
+                        </ul>
+                        <p class="preco">R$ 59,90</p> 
+                        <a class="form" href="index2.html" id="bc1" onmouseover="cor1()" onmouseout="scor1()">OBTER</a>
+                    </div>
+
+                    <div class="card" >
+                        <h3>Gold</h3>
+                        <ul>
+                            <li>EnerGym</li>
+                            <li>Padium</li>
+                            <li>Dynamic</li>
+                            <li>Extreme</li>
+                            <li>Focus</li>
+                        </ul>
+                        <p class="preco">R$ 89,90</p>
+                        <a class="form" href="index2.html" id="bc2" onmouseover="cor2()" onmouseout="scor2()">OBTER</a>
+                    </div>
+
+                    <div class="card">
+                        <h3>Platinum</h3>
+                        <ul class="platinum">
+                            <li>EnerGym</li>
+                            <li>Padium</li>
+                            <li>Dynamic</li>
+                            <li>Extreme</li>
+                            <li>Focus</li>
+                            <li>Health</li>
+                            <li>Power Fit</li>
+                            <li>Vitta</li>
+                        </ul>
+                        <p class="preco">R$ 119,90</p>
+                        <a class="form" href="index2.html" id="bc3" onmouseover="cor3()" onmouseout="scor3()">OBTER</a>
+                    </div>
+                </div>
+            </div>
+            <section id="pag-academias" class="section-social">
+
+                <button class="btn-academias" onclick="abrir()">Clique e saiba quais são as academias parceiras!</button>
+
+                <div id="pag-contato" class="contatos">
+                    <a href="https://www.instagram.com/thiago_bsbr/" target="_blank" title="instagram"><img
+                            src='./img/instagram-logo.svg' /></a>
+                    <a href="mailto:thiago.oliveira8@estudante.ifb.edu.br" target="_blank" title="email"><img
+                            src='./img/envelope.svg' /></a>
+                    <a href="https://www.linkedin.com/in/thiago-moura-79587916b/" target="_blank" title="linkedin"><img
+                            src='./img/linkedin-logo.svg'></a>
+                </div>
+            </section>
+
+        </main>
+
+        <aside>
+            <img class="promo" src="img/promocao.jpg" alt="imagem com propaganda">
+        </aside>
+
+        <footer>
+            <p class="p-footer">Desenvolvido por <a href="https://www.instagram.com/_.ungefehr._" target="_blank" id="author">Christine
+                Ungefehr</a>, <a href="https://www.instagram.com/thiago_bsbr/" target="_blank" id="author">Thiago
+                Oliveira</a> e <a href="https://instagram.com/vitoriateixeira_s" target="_blank" id="author">Vitória
+                Silva</a> - 2022</p>
+            </p>
+        </footer>
+    </section>
+    <div class="overlay disabled" id="overlay">
+        <div class="modal" id="modal">
+           
+           <h2>Academias parceiras:</h2> 
+           
+            <ul>
+                <li>EnerGym</li>
+                <li>Padium</li>
+                <li>Dynamic</li>
+                <li>Extreme</li>
+                <li>Focus</li>
+                <li>Health</li>
+                <li>Power Fit</li>
+                <li>Vitta</li>
+            </ul>
+
+            <button class="btn-acad" onclick="fechar()">Fechar</button>
+        </div>
+    </div>
+</body>
+
+</html>
